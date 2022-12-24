@@ -1,6 +1,4 @@
 const addMovieModal = document.getElementById('add-modal');
-// const addMovieModal = document.querySelector('#add-modal');
-// const addMovieModal = document.body.children[1];
 const AddMovieButton = document.querySelector('#movie-button');
 const visBackdrop = document.getElementById('backdrop');
 const cancelAddMovieButton = addMovieModal.querySelector('.btn--passive');
@@ -28,7 +26,6 @@ const deleteMovie = movieId => {
   }
   movies.splice(movieIndex, 1);
   movieList.children[movieIndex].remove();
-  // movieList.removeChild(movieList.children[movieIndex]);
   updateUi();
 };
 
@@ -36,7 +33,6 @@ const deleteMovieHandler = (movieId) =>{
   const deleteMovieModal = document.getElementById('delete-modal');
   deleteMovieModal.classList.add('visible');
   toggleBackdrop();
-  // deleteMovie(movieId);
 };
 
 
